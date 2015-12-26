@@ -22,18 +22,17 @@ $sudo apt-get install nginx
    （1）在线安装的启动过程
 
       $sudo /etc/init.d/nginx start
+      
 
    （2）重新启动nginx:
 
       $/etc/init.d/nginx restart
 
    （3）启动FastCGI:
-
-      $spawn-fcgi -a 127.0.0.1 -p 9000 -C 10 -u www-data -f /usr/bin/php-cgi
-
-      spawn-fcgi启动出现错误时，查看php-cgi是否安装，如果么有的话，安装php5-cgi。
-
+   
       $sudo apt-get install php5-cgi
+      
+      $sudo php-cgi -b 127.0.0.1:9000
 
 
 ##Nginx配置
