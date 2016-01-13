@@ -1,5 +1,3 @@
-##EventSource在火狐下的使用 
-
 ventSoruce支持除IE外几乎所有浏览器，在做comet类的项目中，使用这个HTML5方法能减轻太多的工作，强烈推荐，但原文档中html端的方法
 var source = new EventSource('/er');
 source.onmessage = function(e){
