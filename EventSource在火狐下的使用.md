@@ -1,13 +1,16 @@
 ventSoruce支持除IE外几乎所有浏览器，在做comet类的项目中，使用这个HTML5方法能减轻太多的工作，强烈推荐，但原文档中html端的方法
-var source = new EventSource('/er');
-source.onmessage = function(e){
-......
-}
-或 监听   source.addEventListener('eventname',function(e){
-.........................................
-});
-两种方式在chrome都运行良好，但在firefox下无法持续获取服务端消息，最长的一次也只成功的接收了10几条
-翻墙后g了无数论坛终于找到兼容ff的方法。
+
+    var source = new EventSource('/er');
+    source.onmessage = function(e){
+    ......
+    }
+    或 监听   
+    source.addEventListener('eventname',function(e){
+    .........................................
+    });
+    
+两种方式在chrome都运行良好，但在firefox下无法持续获取服务端消息，最长的一次也只成功的接收了10几条翻墙后g了无数论坛终于找到兼容ff的方法。
+
 
 node服务端
 router.get('/er', function(req, res) {
@@ -15,6 +18,7 @@ router.get('/er', function(req, res) {
         res.write("data: now Date :" + new Date()+"\r\n\r\n");
         res.end();
 });
+
 
 html端
   document.addEventListener("DOMContentLoaded", function() {
