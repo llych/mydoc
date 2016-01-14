@@ -26,3 +26,7 @@ https://github.com/hu17889/go_spider
 https://github.com/jabbany/CommentCoreLibrary（作者停止开发了）
 
 https://github.com/jabbany/ABPlayerHTML5（最新）
+
+
+### 一个shadown的一键安装脚本
+bash <(curl -s http://morning.work/examples/2015-12/install-shadowsocks.sh)
