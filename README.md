@@ -33,3 +33,6 @@ bash <(curl -s http://morning.work/examples/2015-12/install-shadowsocks.sh)
 
 ### ubuntu下安装aspnet5
 http://www.codeproject.com/Tips/878984/ASP-NET-and-Ubuntu
+
+### gogs(gitserver)
+https://mynook.info/blog/post/host-your-own-git-server-using-gogs
