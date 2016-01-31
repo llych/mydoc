@@ -36,3 +36,6 @@ http://www.codeproject.com/Tips/878984/ASP-NET-and-Ubuntu
 
 ### gogs安装指南
 https://mynook.info/blog/post/host-your-own-git-server-using-gogs
+
+### 一个比较好用的webframework
+https://github.com/colegion/goal
