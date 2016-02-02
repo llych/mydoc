@@ -39,3 +39,6 @@ https://mynook.info/blog/post/host-your-own-git-server-using-gogs
 
 ### 一个比较好用的webframework
 https://github.com/colegion/goal
+
+### 一个不错的web文档服务器
+https://github.com/peachdocs/peach
