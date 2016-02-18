@@ -42,3 +42,7 @@ https://github.com/colegion/goal
 
 ### 一个不错的web文档服务器
 https://github.com/peachdocs/peach
+
+
+### 一个比beego牛逼的web框架
+https://go-macaron.com/
