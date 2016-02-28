@@ -6,7 +6,7 @@
 
     go get github.com/parkghost/gohttpbench
     
-    go build -o gb github.com/parkghost/gohttpbench。
+    go build -o gb github.com/parkghost/gohttpbench
 
 ###vscode的debug插件，win下需要gcc支持
 https://github.com/derekparker/delve
@@ -50,3 +50,6 @@ https://go-macaron.com/
 
 ### Alpine Linux，一个只有5M的Docker镜像
 https://pkgs.alpinelinux.org
+
+### json对象转go对象
+http://mholt.github.io/json-to-go/
