@@ -58,3 +58,6 @@ http://mholt.github.io/json-to-go/
 
 ### 标准UTC时间接口
 http://www.timeapi.org/
+
+### consul教程
+http://www.tuicool.com/articles/M3QFven
