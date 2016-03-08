@@ -29,7 +29,8 @@ https://github.com/jabbany/ABPlayerHTML5（最新）
 
 
 ### 一个shadown的一键安装脚本
-bash <(curl -s http://morning.work/examples/2015-12/install-shadowsocks.sh)
+
+    bash <(curl -s http://morning.work/examples/2015-12/install-shadowsocks.sh)
 
 ### ubuntu下安装aspnet5
 http://www.codeproject.com/Tips/878984/ASP-NET-and-Ubuntu
