@@ -7,7 +7,7 @@
 ```
 docker@boot2docker:~$ docker run -d --name node1 -h node1 progrium/consul -server -bootstrap-expect 3
  
-docker@boot2docker:~$ JOIN_IP="$(docker inspect -f '{{ .NetworkSettings.IPAddress }}' node1)”
+docker@boot2docker:~$ JOIN_IP="$(docker inspect -f '{{ .NetworkSettings.IPAddress }}' node1)"
  
 docker@boot2docker:~$ docker run -d --name node2 -h node2 progrium/consul -server -join $JOIN_IP
  
