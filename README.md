@@ -61,3 +61,6 @@ http://www.timeapi.org/
 
 ### consul教程
 http://www.tuicool.com/articles/M3QFven
+
+### ini操作
+http://www.tuicool.com/articles/MramMf2
