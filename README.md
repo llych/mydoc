@@ -64,3 +64,7 @@ http://www.tuicool.com/articles/M3QFven
 
 ### ini操作
 http://www.tuicool.com/articles/MramMf2
+
+
+### Rocket.Chat Rest-API
+https://github.com/RocketChat/Rocket.Chat/wiki/REST-APIs
