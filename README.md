@@ -45,8 +45,12 @@ https://github.com/colegion/goal
 https://github.com/peachdocs/peach
 
 
-### 一个比beego牛逼的web框架
-https://go-macaron.com/
+### 一些轻量级的web框架
+
+    https://go-macaron.com/
+    https://github.com/gin-gonic/gin
+    https://github.com/labstack/echo
+    https://github.com/zenazn/goji
 
 
 ### Alpine Linux，一个只有5M的Docker镜像
