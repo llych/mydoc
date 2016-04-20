@@ -31,10 +31,10 @@ docker run --name nsqadmin -itd -p 4171:4171 \
 
 ##### Setup 4
 ```
-docker run --name nsq_to_file -itd \
+docker run --name nsq_to_file -itd --link=nsq_data:nsq_data \
     nsqio/nsq /nsq_to_file \
     --topic=test \
-    --output-dir=/tmp \
+    --output-dir=nsq_data/temp \
     --lookupd-http-address=172.20.7.101:4161
 ```
 
