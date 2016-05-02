@@ -8,8 +8,10 @@
     
     go build -o gb github.com/parkghost/gohttpbench
 
-###vscode的debug插件，win下需要gcc支持
-https://github.com/derekparker/delve
+###vscode的debug插件
+    go get -u -v github.com/derekparker/delve/cmd/dlv 
+    或者手动从git上下载，然后
+    go install github.com/derekparker/delve/cmd/dlv
 
 
 ###react
