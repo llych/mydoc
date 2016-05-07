@@ -47,4 +47,4 @@ WORKDIR /gopath/src
 
 # RUN ln -s /code/goapi
 
-EXPOSE 22
+EXPOSE 22 80 8080
