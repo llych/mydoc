@@ -42,8 +42,8 @@ ENV PATH $PATH:$GOPATH/bin:$GOROOT/bin
 ENV ROOT_PASS secondlife
 
 RUN go get github.com/tools/godep
-RUN mkdir /gopath/src
-WORKDIR /gopath/src
+RUN mkdir /gopath/src/my.app
+WORKDIR /gopath/src/my.app
 
 # RUN ln -s /code/goapi
 
