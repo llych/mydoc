@@ -8,18 +8,18 @@ MAINTAINER Eason <80186658@qq.com>
 
 # 设置时区
 RUN echo 'Asia/Shanghai' > /etc/timezone
-# 设置软件源
-RUN rm /etc/apt/sources.list
-ADD sources.list /etc/apt/
+# 同步本机源
+#RUN rm /etc/apt/sources.list
+#ADD sources.list /etc/apt/
 
 # 附加必须的依赖
 RUN apt-get update && apt-get install -yq git wget gcc
 RUN rm -rf /var/cache/apt/archives /var/cache/apt/archives/partial
 
-RUN wget -q http://7rf3a1.com1.z0.glb.clouddn.com/go1.5.1.linux-amd64.tar.gz
+RUN wget -q http://www.golangtc.com/static/go/1.6.2/go1.6.2.linux-amd64.tar.gz
 
-RUN tar -xf go1.5.1.linux-amd64.tar.gz -C /usr/local && \
-rm go1.5.1.linux-amd64.tar.gz
+RUN tar -xf go1.6.2.linux-amd64.tar.gz -C /usr/local && \
+rm go1.6.2.linux-amd64.tar.gz
 
 RUN echo 'export GOPATH=/gopath' >> /etc/profile && \
 echo 'export PATH=$PATH:$GOPATH/bin:$GOROOT/bin' >> /etc/profile && \
@@ -39,12 +39,12 @@ ENV GOVERSION 1.5.1
 ENV GOROOT /usr/local/go
 ENV GOPATH /gopath
 ENV PATH $PATH:$GOPATH/bin:$GOROOT/bin
-ENV ROOT_PASS eason
+ENV ROOT_PASS secondlife
 
 RUN go get github.com/tools/godep
-RUN mkdir /gopath/src/goapi
-WORKDIR /gopath/src/goapi
+RUN mkdir /gopath/src
+WORKDIR /gopath/src
 
-RUN ln -s /code/goapi
+# RUN ln -s /code/goapi
 
 EXPOSE 22
