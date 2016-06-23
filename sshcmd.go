@@ -134,4 +134,4 @@ func (s *server) Start() {
 }
 
 
-# ./sshcmd -h yourname@host -p password
+// use： ./sshcmd -h yourname@host -p password
