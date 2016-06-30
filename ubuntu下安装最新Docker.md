@@ -1,4 +1,9 @@
-##1、使用 apt-get 
+##1、在线脚本安装
+
+    curl -fsSL https://get.docker.com/ | sh
+
+
+##2、使用 apt-get 
 
 ##### Add the Docker repository key to your local keychain 
 
@@ -20,7 +25,7 @@
     sudo apt-get install lxc-docker 
 
 
-##2、手工安装 
+##3、手工安装 
 
 
 #####  kill the running docker daemon 
