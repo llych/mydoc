@@ -54,24 +54,3 @@ create or replace package body pkg_query is
     OPEN p_v_cur FOR strSql;
   end P_DataPagination;
 end pkg_query;
-
-
-
-
-
-select t3.id, t3.rule_phase, t3.finsh_action, t3.rule_condition, t3.rule_action, t1.cluster_name, t1.id as cluster_id from cluster t1,cluster_map t2,filter t3 where t1.id = t2.cluster_id and t2.key_id = t3.id and t4.enabled=1  order by t4.rule_sort
-
-
-SELECT t4.id, t4.rule_name, t4.rule_phase, t4.finsh_action, t4.rule_condition, t4.rule_action, t4.rule_sort, t4.enabled, t4.group_id FROM role_info t1 LEFT JOIN role_map t2 ON t1.id=t2.role_id left join source_data t3 on t2.key_id = t3.id left join filter t4 on t4.group_id = t3.id
-
-
-
-
-inner join:
-SELECT t3.id, t3.rule_phase, t3.finsh_action, t3.rule_condition, t3.rule_action, t1.cluster_name, t1.id AS cluster_id FROM cluster t1,cluster_map t2,filter t3 WHERE t1.id = t2.cluster_id AND t2.key_id = t3.id AND  t2.key_type=2 AND t2.enabled=1
-
-left join:
-SELECT t3.id, t3.rule_phase, t3.finsh_action, t3.rule_condition, t3.rule_action, t1.cluster_name, t1.id AS cluster_id FROM cluster t1 LEFT JOIN cluster_map t2 ON t1.id=t2.cluster_id LEFT JOIN filter t3 ON t3.id = t2.key_id WHERE t2.key_type=2 AND t2.enabled = 1
-
-key_type:
-// 1:route 2:filter 3:backend 4:route_group 5:filter_group 6:backend_group
