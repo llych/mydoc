@@ -1,20 +1,28 @@
+
+### /usr/lib/systemd/system/docker.service
+
+```
+
 [Unit]
- 22 Description=Docker Application Container Engine
- 23 Documentation=http://docs.docker.com
- 24 After=network.target docker.socket
- 25 Requires=docker.socket
- 26 
- 27 [Service]
- 28 Type=notify
- 29 MountFlags=slav
- 30 EnvironmentFile=-/etc/default/docker
- 31 ExecStart=/usr/bin/docker daemon -H fd:// $DOCKER_OPTS
- 32 LimitNOFILE=1048576
- 33 LimitNPROC=1048576
- 34 LimitCORE=infinity
- 35 TimeoutStartSec=0
- 36 Delegate=yes
- 37 
- 38 [Install]
- 39 Also=docker.socket
- 40 WantedBy=multi-user.target
+Description=Docker Application Container Engine
+Documentation=http://docs.docker.com
+After=network.target docker.socket
+Requires=docker.socket
+
+[Service]
+Type=notify
+MountFlags=slav
+EnvironmentFile=-/etc/default/docker
+ExecStart=/usr/bin/docker daemon -H fd:// $DOCKER_OPTS
+LimitNOFILE=1048576
+LimitNPROC=1048576
+LimitCORE=infinity
+TimeoutStartSec=0
+Delegate=yes
+
+[Install]
+Also=docker.socket
+WantedBy=multi-user.target
+
+
+```
