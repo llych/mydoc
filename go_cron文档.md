@@ -4,6 +4,7 @@ https://github.com/robfig/cron
 #### 使用说明
 
 >注册任务到调度器里，当任务要执行的时候会使用goroutines调用，这样每个任务都不会发生阻塞。 
+
 >Golang不仅仅是兼容了linux标准的crontab格式，而且扩展了秒。也就是说正常的crontab是 分 时 小时 月 星期，而robfig cron是 秒 分 时 日 月 星期。 
 
 ```
